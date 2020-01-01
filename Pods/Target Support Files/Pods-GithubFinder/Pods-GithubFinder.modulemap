@@ -1,0 +1,6 @@
+module Pods_GithubFinder {
+  umbrella header "Pods-GithubFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
