@@ -9,13 +9,20 @@
 import SwiftUI
 
 struct SearchView: View {
-    var body: some View {
-        Text("Search")
+  @State var name: String = ""
+  
+  var body: some View {
+    VStack{
+      TextField("Enter user name", text: $name)
+      Spacer()
+      ProfileView()
     }
+    .navigationBarTitle("Users")
+  }
 }
 
 struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
+  static var previews: some View {
+    SearchView()
+  }
 }

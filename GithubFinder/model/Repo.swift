@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Repo {
+struct Repo: Codable {
   var title: String
   var description: String
   var language: String

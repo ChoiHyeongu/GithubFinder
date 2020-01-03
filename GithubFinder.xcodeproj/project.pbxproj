@@ -12,6 +12,7 @@
 		DE000CB923BB3ABD000C082C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB823BB3ABD000C082C /* Repo.swift */; };
 		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
 		DE342E1323BB449F0002E90E /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* RestManager.swift */; };
+		DE5EFB0B23BD94D70034EDF5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFB0A23BD94D70034EDF5 /* Config.swift */; };
 		DE813D7C23B914AD00A3E72A /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7B23B914AD00A3E72A /* TabItemView.swift */; };
 		DE813D7E23B9155A00A3E72A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7D23B9155A00A3E72A /* ProfileView.swift */; };
 		DE813D8023B9156100A3E72A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7F23B9156100A3E72A /* SearchView.swift */; };
@@ -30,6 +31,7 @@
 		DE000CB823BB3ABD000C082C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		DE342E1023BB416C0002E90E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		DE342E1223BB449F0002E90E /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		DE5EFB0A23BD94D70034EDF5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		DE813D7B23B914AD00A3E72A /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		DE813D7D23B9155A00A3E72A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DE813D7F23B9156100A3E72A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				DE000CB623BB3A7E000C082C /* User.swift */,
 				DE000CB823BB3ABD000C082C /* Repo.swift */,
+				DE5EFB0A23BD94D70034EDF5 /* Config.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -105,6 +108,14 @@
 			path = delegate;
 			sourceTree = "<group>";
 		};
+		DE9C2F5D23BDA51F00BCDF61 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				DE342E1223BB449F0002E90E /* RestManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 		DED9A22C23B90844000279BB = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +137,7 @@
 		DED9A23723B90844000279BB /* GithubFinder */ = {
 			isa = PBXGroup;
 			children = (
+				DE9C2F5D23BDA51F00BCDF61 /* manager */,
 				DE342E0F23BB415D0002E90E /* enum */,
 				DE000CB523BB3A5B000C082C /* model */,
 				DE813D7A23B9149300A3E72A /* delegate */,
@@ -134,7 +146,6 @@
 				DED9A24323B90846000279BB /* LaunchScreen.storyboard */,
 				DED9A24623B90846000279BB /* Info.plist */,
 				DED9A24023B90846000279BB /* Preview Content */,
-				DE342E1223BB449F0002E90E /* RestManager.swift */,
 			);
 			path = GithubFinder;
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 				DE342E1123BB416C0002E90E /* Language.swift in Sources */,
 				DED9A23923B90844000279BB /* AppDelegate.swift in Sources */,
 				DE813D7C23B914AD00A3E72A /* TabItemView.swift in Sources */,
+				DE5EFB0B23BD94D70034EDF5 /* Config.swift in Sources */,
 				DE000CB923BB3ABD000C082C /* Repo.swift in Sources */,
 				DE813D7E23B9155A00A3E72A /* ProfileView.swift in Sources */,
 				DE000CB723BB3A7E000C082C /* User.swift in Sources */,

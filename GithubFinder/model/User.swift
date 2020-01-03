@@ -8,9 +8,6 @@
 
 import Foundation
 
-struct User {
-  var name: String
-  var email: String
-  var bio: String
-  var repos: [Repo]
+struct User: Codable {
+  var login: String
 }
