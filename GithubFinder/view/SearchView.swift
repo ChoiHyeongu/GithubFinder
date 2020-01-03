@@ -10,9 +10,9 @@ import SwiftUI
 
 struct SearchView: View {
   @State var name: String = ""
-  
+
   var body: some View {
-    VStack{
+    VStack {
       TextField("Enter user name", text: $name)
       Spacer()
       ProfileView()
