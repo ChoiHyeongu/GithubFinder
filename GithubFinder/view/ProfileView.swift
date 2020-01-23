@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+  var name: String?
+  
   var body: some View {
     VStack {
       Information
