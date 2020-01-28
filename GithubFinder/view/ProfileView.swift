@@ -24,9 +24,11 @@ struct ProfileView: View {
       .frame(width: 200.0, height: 200.0)
       .overlay(Circle().stroke(Color.white, lineWidth: 4))
       .shadow(radius: 10)
-      
+
+      Text(profileViewModel.user.login)
+        .font(.title)
+        .fontWeight(.bold)
       Text(profileViewModel.user.bio ?? "")
-        .font(.callout)
     }
   }
 
