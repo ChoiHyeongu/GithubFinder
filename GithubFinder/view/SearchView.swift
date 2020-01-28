@@ -14,7 +14,7 @@ struct SearchView: View {
   var body: some View {
     VStack {
       TextField("Enter user name", text: $name)
-      ProfileView()
+      ProfileView(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
     }
     .navigationBarTitle("Users")
   }

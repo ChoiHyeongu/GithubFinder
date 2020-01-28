@@ -10,4 +10,9 @@ import Foundation
 
 struct User: Codable {
   var login: String
+  var email: String?
+  var followers: Int = 0
+  var following: Int = 0
+  var avatar_url: String = ""
+  var bio: String? 
 }

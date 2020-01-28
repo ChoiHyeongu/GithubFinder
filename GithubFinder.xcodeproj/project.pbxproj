@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,15 @@
 		DE000CB723BB3A7E000C082C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB623BB3A7E000C082C /* User.swift */; };
 		DE000CB923BB3ABD000C082C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB823BB3ABD000C082C /* Repo.swift */; };
 		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
-		DE342E1323BB449F0002E90E /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* RestManager.swift */; };
+		DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* GithubAPI.swift */; };
 		DE5EFB0B23BD94D70034EDF5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFB0A23BD94D70034EDF5 /* Config.swift */; };
 		DE813D7C23B914AD00A3E72A /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7B23B914AD00A3E72A /* TabItemView.swift */; };
 		DE813D7E23B9155A00A3E72A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7D23B9155A00A3E72A /* ProfileView.swift */; };
 		DE813D8023B9156100A3E72A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7F23B9156100A3E72A /* SearchView.swift */; };
 		DE813D8223B9156F00A3E72A /* TrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D8123B9156F00A3E72A /* TrendingView.swift */; };
+		DE9C230923DFEA2700AC4970 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9C230823DFEA2700AC4970 /* ProfileViewModel.swift */; };
+		DE9C230B23DFEB1300AC4970 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9C230A23DFEB1300AC4970 /* SettingsView.swift */; };
+		DE9C231023DFFD9700AC4970 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE9C230F23DFFD9700AC4970 /* URLImage */; };
 		DED9A23923B90844000279BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9A23823B90844000279BB /* AppDelegate.swift */; };
 		DED9A23B23B90844000279BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9A23A23B90844000279BB /* SceneDelegate.swift */; };
 		DED9A23D23B90844000279BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9A23C23B90844000279BB /* ContentView.swift */; };
@@ -30,12 +33,14 @@
 		DE000CB623BB3A7E000C082C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE000CB823BB3ABD000C082C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		DE342E1023BB416C0002E90E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		DE342E1223BB449F0002E90E /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		DE342E1223BB449F0002E90E /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		DE5EFB0A23BD94D70034EDF5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		DE813D7B23B914AD00A3E72A /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		DE813D7D23B9155A00A3E72A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DE813D7F23B9156100A3E72A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DE813D8123B9156F00A3E72A /* TrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingView.swift; sourceTree = "<group>"; };
+		DE9C230823DFEA2700AC4970 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DE9C230A23DFEB1300AC4970 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DED9A23523B90844000279BB /* GithubFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED9A23823B90844000279BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED9A23A23B90844000279BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9C231023DFFD9700AC4970 /* URLImage in Frameworks */,
 				874FED39AE37985240B0A827 /* libPods-GithubFinder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,8 @@
 				DE813D7D23B9155A00A3E72A /* ProfileView.swift */,
 				DE813D7F23B9156100A3E72A /* SearchView.swift */,
 				DE813D8123B9156F00A3E72A /* TrendingView.swift */,
+				DE9C230823DFEA2700AC4970 /* ProfileViewModel.swift */,
+				DE9C230A23DFEB1300AC4970 /* SettingsView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -111,7 +119,7 @@
 		DE9C2F5D23BDA51F00BCDF61 /* manager */ = {
 			isa = PBXGroup;
 			children = (
-				DE342E1223BB449F0002E90E /* RestManager.swift */,
+				DE342E1223BB449F0002E90E /* GithubAPI.swift */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -183,6 +191,9 @@
 			dependencies = (
 			);
 			name = GithubFinder;
+			packageProductDependencies = (
+				DE9C230F23DFFD9700AC4970 /* URLImage */,
+			);
 			productName = GithubFinder;
 			productReference = DED9A23523B90844000279BB /* GithubFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +222,9 @@
 				Base,
 			);
 			mainGroup = DED9A22C23B90844000279BB;
+			packageReferences = (
+				DE9C230E23DFFD9700AC4970 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = DED9A23623B90844000279BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,15 +278,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE813D8223B9156F00A3E72A /* TrendingView.swift in Sources */,
-				DE342E1323BB449F0002E90E /* RestManager.swift in Sources */,
+				DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */,
 				DE342E1123BB416C0002E90E /* Language.swift in Sources */,
 				DED9A23923B90844000279BB /* AppDelegate.swift in Sources */,
 				DE813D7C23B914AD00A3E72A /* TabItemView.swift in Sources */,
 				DE5EFB0B23BD94D70034EDF5 /* Config.swift in Sources */,
 				DE000CB923BB3ABD000C082C /* Repo.swift in Sources */,
+				DE9C230B23DFEB1300AC4970 /* SettingsView.swift in Sources */,
 				DE813D7E23B9155A00A3E72A /* ProfileView.swift in Sources */,
 				DE000CB723BB3A7E000C082C /* User.swift in Sources */,
 				DED9A23B23B90844000279BB /* SceneDelegate.swift in Sources */,
+				DE9C230923DFEA2700AC4970 /* ProfileViewModel.swift in Sources */,
 				DE813D8023B9156100A3E72A /* SearchView.swift in Sources */,
 				DED9A23D23B90844000279BB /* ContentView.swift in Sources */,
 			);
@@ -470,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE9C230E23DFFD9700AC4970 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE9C230F23DFFD9700AC4970 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE9C230E23DFFD9700AC4970 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DED9A22D23B90844000279BB /* Project object */;
 }
