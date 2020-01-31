@@ -11,11 +11,10 @@ import URLImage
 
 struct ProfileView: View {
   @ObservedObject var profileViewModel: ProfileViewModel
-  var url: URL = URL(string: "https://avatars2.githubusercontent.com/u/35494666?v=4")!
 
   var ProfileImageView: some View {
     VStack {
-      URLImage(url) { proxy in
+      URLImage(URL(string: profileViewModel.user.avatar_url)!) { proxy in
         proxy.image
           .resizable()
           .aspectRatio(contentMode: .fill)
@@ -58,6 +57,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
   static var previews: some View {
-    ProfileView(profileViewModel: ProfileViewModel(login: "Choihyeongu"), url: URL(string: "https://avatars2.githubusercontent.com/u/35494666?v=4")!)
+    ProfileView(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
   }
 }

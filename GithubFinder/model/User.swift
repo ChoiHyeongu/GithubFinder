@@ -13,6 +13,6 @@ struct User: Codable {
   var email: String?
   var followers: Int = 0
   var following: Int = 0
-  var avatar_url: String = ""
-  var bio: String? 
+  var bio: String?
+  var avatar_url: String = AppConfig.DEFAULT_AVATAR
 }
