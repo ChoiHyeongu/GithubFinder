@@ -14,8 +14,8 @@ struct SettingsScene: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
+struct SettingsScene_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsScene()
     }
 }

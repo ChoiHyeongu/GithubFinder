@@ -58,13 +58,14 @@ struct ProfileScene: View {
     VStack {
       ProfileImageBackgroundView
       UsernameAndAvatar
+      
       Spacer()
     }
   }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct ProfileScene_Previews: PreviewProvider {
   static var previews: some View {
-    ProfileView(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
+    ProfileScene(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
   }
 }

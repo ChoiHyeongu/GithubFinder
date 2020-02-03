@@ -14,14 +14,13 @@ struct SearchScene: View {
   var body: some View {
     VStack {
       TextField("Enter user name", text: $name)
-      ProfileView(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
     }
     .navigationBarTitle("Users")
   }
 }
 
-struct SearchView_Previews: PreviewProvider {
+struct SearchScene_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView()
+    SearchScene()
   }
 }

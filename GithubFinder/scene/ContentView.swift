@@ -12,13 +12,13 @@ struct ContentView: View {
   var body: some View {
     VStack {
       TabView {
-        ProfileView(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
+        ProfileScene(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
           .tabItem { Text("Profile") }.tag(1)
-        SearchView()
+        SearchScene()
           .tabItem { Text("Search") }.tag(2)
-        TrendingView()
+        TrendingScene()
           .tabItem { Text("Trending") }.tag(3)
-        SettingsView()
+        SettingsScene()
           .tabItem { Text("Settings") }.tag(4)
       }
     }

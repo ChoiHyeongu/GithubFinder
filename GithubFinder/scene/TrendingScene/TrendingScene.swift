@@ -14,8 +14,8 @@ struct TrendingScene: View {
     }
 }
 
-struct TrendingView_Previews: PreviewProvider {
+struct TrendingScene_Previews: PreviewProvider {
     static var previews: some View {
-        TrendingView()
+        TrendingScene()
     }
 }
