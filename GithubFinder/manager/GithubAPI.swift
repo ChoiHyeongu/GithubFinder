@@ -21,7 +21,7 @@ class GithubAPI {
   /// 유저 정보 가져오기
   /// - Parameter login: 아이디
   func getUser(_ login: String, _ completion: @escaping (Result<User, Error>) -> Void) {
-    request = AF.request("\(Config.BASE_URL)/users/\(login)", headers: ["Authorization": Config.API_KEY])
+    request = AF.request("\(AppConfig.BASE_URL)/users/\(login)", headers: ["Authorization": AppConfig.API_KEY])
     request?.responseDecodable { (response: DataResponse<User, AFError>) in
       switch response.result {
       case let .success(user):

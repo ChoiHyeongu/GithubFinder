@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Contribution {
+  var count: Int
+  var date: Date
+}
