@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TrendingView: View {
+struct TrendingScene: View {
     var body: some View {
         Text("Trending")
     }

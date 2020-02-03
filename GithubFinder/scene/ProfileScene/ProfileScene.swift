@@ -9,10 +9,10 @@
 import SwiftUI
 import URLImage
 
-struct ProfileView: View {
+struct ProfileScene: View {
   @ObservedObject var profileViewModel: ProfileViewModel
 
-  var ProfileImageView: some View {
+  var UsernameAndAvatar: some View {
     VStack {
       URLImage(URL(string: profileViewModel.user.avatar_url)!) { proxy in
         proxy.image
@@ -29,28 +29,36 @@ struct ProfileView: View {
         .fontWeight(.bold)
       Text(profileViewModel.user.bio ?? "")
     }
-  }
-
-  var InformationsView: some View {
-    VStack(alignment: .leading) {
-      Text(profileViewModel.user.login)
-      Text("Email : \(profileViewModel.user.email ?? "")")
-      Text("Followers: \(profileViewModel.user.followers)")
-      Text("Following: \(profileViewModel.user.following)")
-    }
+    .offset(y: -110)
   }
 
   var ProfileImageBackgroundView: some View {
-    LinearGradient(gradient: Gradient(colors: [Config.GITHUB_BACKGROUND, Config.GITHUB_BACKGROUND]), startPoint: .leading, endPoint: .trailing)
-      .padding(.bottom, 80)
+    LinearGradient(gradient: Gradient(colors: [AppConfig.GITHUB_BACKGROUND, AppConfig.GITHUB_BACKGROUND]), startPoint: .leading, endPoint: .trailing)
+      .frame(height: 280)
+      .edgesIgnoringSafeArea(.top)
+  }
+
+  var FollowerView: some View {
+    VStack {
+      Text("Followers")
+      Text(String(profileViewModel.user.followers))
+    }
+    .padding(.leading)
+  }
+
+  var FollowingView: some View {
+    VStack {
+      Text("Follwing")
+      Text(String(profileViewModel.user.following))
+    }
+    .padding(.trailing)
   }
 
   var body: some View {
     VStack {
       ProfileImageBackgroundView
-      ProfileImageView
-        .offset(y: -190)
-      InformationsView
+      UsernameAndAvatar
+      Spacer()
     }
   }
 }

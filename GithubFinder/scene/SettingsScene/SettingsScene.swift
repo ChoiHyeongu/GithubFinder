@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct SettingsScene: View {
     var body: some View {
         Text("Settings")
     }

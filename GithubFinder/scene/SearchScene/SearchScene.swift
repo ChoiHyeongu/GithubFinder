@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SearchView: View {
+struct SearchScene: View {
   @State var name: String = ""
 
   var body: some View {
