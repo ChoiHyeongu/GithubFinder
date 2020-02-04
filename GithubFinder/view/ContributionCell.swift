@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContributionCell: View {
   var body: some View {
-    Color(red: 235, green: 237, blue: 240)
+    Color(hex: "#FFF")
       .frame(width: 30, height: 30)
   }
 }
