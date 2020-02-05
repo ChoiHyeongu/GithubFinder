@@ -12,7 +12,7 @@ import URLImage
 struct ProfileScene: View {
   @ObservedObject var profileViewModel: ProfileViewModel
 
-  var UsernameAndAvatar: some View {
+  var UsernameAndAvatarView: some View {
     VStack {
       URLImage(URL(string: profileViewModel.user.avatar_url)!) { proxy in
         proxy.image
@@ -29,13 +29,6 @@ struct ProfileScene: View {
         .fontWeight(.bold)
       Text(profileViewModel.user.bio ?? "")
     }
-    .offset(y: -110)
-  }
-
-  var ProfileImageBackgroundView: some View {
-    LinearGradient(gradient: Gradient(colors: [AppConfig.GITHUB_BACKGROUND, AppConfig.GITHUB_BACKGROUND]), startPoint: .leading, endPoint: .trailing)
-      .frame(height: 280)
-      .edgesIgnoringSafeArea(.top)
   }
 
   var FollowerView: some View {
@@ -55,11 +48,13 @@ struct ProfileScene: View {
   }
 
   var body: some View {
-    VStack {
-      ProfileImageBackgroundView
-      UsernameAndAvatar
-      
-      Spacer()
+    ZStack {
+      AppConfig.GITHUB_BACKGROUND.edgesIgnoringSafeArea(.all)
+      VStack {
+        UsernameAndAvatarView
+        ContributionChartView()
+        Spacer()
+      }
     }
   }
 }
