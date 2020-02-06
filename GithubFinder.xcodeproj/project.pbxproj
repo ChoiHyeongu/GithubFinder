@@ -10,11 +10,12 @@
 		874FED39AE37985240B0A827 /* libPods-GithubFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFCC8D9A93EC70A1D8DB76C /* libPods-GithubFinder.a */; };
 		DE000CB723BB3A7E000C082C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB623BB3A7E000C082C /* User.swift */; };
 		DE000CB923BB3ABD000C082C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB823BB3ABD000C082C /* Repo.swift */; };
+		DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE042D9A23EB02E500E3C37B /* Contributions.swift */; };
 		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
 		DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* GithubAPI.swift */; };
 		DE535F9323E431250009C756 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE535F9223E431250009C756 /* AppConfig.swift */; };
 		DE71E1D923E7A15E00240A0A /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1D823E7A15E00240A0A /* Contribution.swift */; };
-		DE71E1E123E7A51900240A0A /* ContributionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E023E7A51900240A0A /* ContributionChartView.swift */; };
+		DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */; };
 		DE71E1E323E7A67D00240A0A /* ContributionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E223E7A67D00240A0A /* ContributionCellView.swift */; };
 		DE813D7C23B914AD00A3E72A /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7B23B914AD00A3E72A /* TabItemView.swift */; };
 		DE813D7E23B9155A00A3E72A /* ProfileScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7D23B9155A00A3E72A /* ProfileScene.swift */; };
@@ -36,11 +37,12 @@
 		D0FA50BC5DCA9DDFB3825E1F /* Pods-GithubFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubFinder.release.xcconfig"; path = "Target Support Files/Pods-GithubFinder/Pods-GithubFinder.release.xcconfig"; sourceTree = "<group>"; };
 		DE000CB623BB3A7E000C082C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE000CB823BB3ABD000C082C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		DE042D9A23EB02E500E3C37B /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
 		DE342E1023BB416C0002E90E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		DE342E1223BB449F0002E90E /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		DE535F9223E431250009C756 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		DE71E1D823E7A15E00240A0A /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
-		DE71E1E023E7A51900240A0A /* ContributionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionChartView.swift; sourceTree = "<group>"; };
+		DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionGraphView.swift; sourceTree = "<group>"; };
 		DE71E1E223E7A67D00240A0A /* ContributionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionCellView.swift; sourceTree = "<group>"; };
 		DE813D7B23B914AD00A3E72A /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		DE813D7D23B9155A00A3E72A /* ProfileScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				DE000CB623BB3A7E000C082C /* User.swift */,
 				DE000CB823BB3ABD000C082C /* Repo.swift */,
 				DE71E1D823E7A15E00240A0A /* Contribution.swift */,
+				DE042D9A23EB02E500E3C37B /* Contributions.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -114,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DE813D7B23B914AD00A3E72A /* TabItemView.swift */,
-				DE71E1E023E7A51900240A0A /* ContributionChartView.swift */,
+				DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */,
 				DE71E1E223E7A67D00240A0A /* ContributionCellView.swift */,
 			);
 			path = view;
@@ -349,8 +352,9 @@
 				DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */,
 				DE342E1123BB416C0002E90E /* Language.swift in Sources */,
 				DED9A23923B90844000279BB /* AppDelegate.swift in Sources */,
-				DE71E1E123E7A51900240A0A /* ContributionChartView.swift in Sources */,
+				DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */,
 				DE813D7C23B914AD00A3E72A /* TabItemView.swift in Sources */,
+				DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */,
 				DE535F9323E431250009C756 /* AppConfig.swift in Sources */,
 				DE71E1E323E7A67D00240A0A /* ContributionCellView.swift in Sources */,
 				DE000CB923BB3ABD000C082C /* Repo.swift in Sources */,

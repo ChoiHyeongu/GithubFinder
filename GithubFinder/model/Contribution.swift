@@ -8,7 +8,18 @@
 
 import Foundation
 
-struct Contribution {
+struct Contribution: Codable {
+  
+  init() {
+    self.count = 0
+    self.date = "0"
+    self.color = "0"
+  }
+  
+  /// 횟수
   var count: Int
-  var date: Date
+  /// 날짜
+  var date: String
+  /// 섹
+  var color: String
 }

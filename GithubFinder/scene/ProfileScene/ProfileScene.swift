@@ -48,13 +48,10 @@ struct ProfileScene: View {
   }
 
   var body: some View {
-    ZStack {
-      AppConfig.GITHUB_BACKGROUND.edgesIgnoringSafeArea(.all)
-      VStack {
-        UsernameAndAvatarView
-        ContributionChartView()
-        Spacer()
-      }
+    VStack {
+      UsernameAndAvatarView
+      ContributionGraphView(contributions: $profileViewModel.contributions)
+      Spacer()
     }
   }
 }
