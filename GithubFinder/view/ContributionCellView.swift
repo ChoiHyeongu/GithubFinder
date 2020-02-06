@@ -9,20 +9,21 @@
 import SwiftUI
 
 struct ContributionCellView: View {
-  var level: Level = Level.level1
+  var level: Level = Level.level5
 
   init(_ count: Int) {
+    print("count: \(count)")
     switch count {
-    case 0:
-      level = .level1
     case 1 ... 24:
       level = .level2
     case 25 ... 49:
       level = .level3
     case 50 ... 74:
       level = .level4
-    default:
+    case 75 ... 10000:
       level = .level5
+    default:
+      level = .level1
     }
   }
 

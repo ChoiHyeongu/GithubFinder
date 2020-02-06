@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct ContributionGraphView: View {
-  @ObservedObject var graphViewModel = ContributionGraphViewModel()
+  @Binding var contributions: [[Contribution]]
 
   var body: some View {
     HStack(spacing: AppConfig.DEFAULT_GRAPH_SPACE) {
-      ForEach(0 ..< graphViewModel.contributions.count, id:\.self) { col in
+      ForEach(0 ..< contributions.count, id:\.self) { col in
         VStack(spacing: AppConfig.DEFAULT_GRAPH_SPACE) {
-          ForEach(0 ..< self.graphViewModel.contributions[col].count, id:\.self) { row in ContributionCellView(self.graphViewModel.contributions[col][row].count)
+          ForEach(0 ..< self.contributions[col].count, id:\.self) { row in ContributionCellView(self.contributions[col][row].count)
           }
         }
       }
@@ -28,8 +28,8 @@ struct ContributionGraphView: View {
 }
 
 struct ContributionChartView_Previews: PreviewProvider {
-  static let contributions = [[Contribution]](repeating: Array(repeating: Contribution(), count: 0), count: 20)
+  @State static var contributions = [[Contribution]](repeating: Array(repeating: Contribution(), count: 0), count: 20)
   static var previews: some View {
-    ContributionGraphView()
+    ContributionGraphView(contributions: $contributions)
   }
 }

@@ -14,6 +14,7 @@ class ProfileViewModel: ObservableObject {
 
   init(login: String) {
     setUser(login: login)
+    setContributionGraph(username: "choihyeongu")
   }
 
   /// 유저 정보 저장하기
@@ -25,6 +26,22 @@ class ProfileViewModel: ObservableObject {
         self.user = user
         self.user.bio = user.bio?.filter { !"\r\n".contains($0) }
         self.user.bio = self.user.bio?.replacingOccurrences(of: "  ", with: "")
+      case let .failure(error):
+        print(error)
+      }
+    }
+  }
+
+  /// 컨트리뷰션 정보 저장하기
+  /// - Parameter username: 유저이름
+  func setContributionGraph(username: String) {
+    GithubAPI.shared.getContributions("choihyeongu") { result in
+      switch result {
+      case let .success(data):
+        let list = Array(data.contributions[320...459].reversed())
+        for (index, item) in list.enumerated() {
+          self.contributions[index / 7].append(item)
+        }
       case let .failure(error):
         print(error)
       }

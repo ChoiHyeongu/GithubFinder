@@ -50,7 +50,7 @@ struct ProfileScene: View {
   var body: some View {
     VStack {
       UsernameAndAvatarView
-      ContributionGraphView()
+      ContributionGraphView(contributions: $profileViewModel.contributions)
       Spacer()
     }
   }

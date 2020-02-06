@@ -13,7 +13,6 @@
 		DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE042D9A23EB02E500E3C37B /* Contributions.swift */; };
 		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
 		DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* GithubAPI.swift */; };
-		DE3C014623EBA73A0060B7B5 /* ContributionGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C014523EBA73A0060B7B5 /* ContributionGraphViewModel.swift */; };
 		DE535F9323E431250009C756 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE535F9223E431250009C756 /* AppConfig.swift */; };
 		DE71E1D923E7A15E00240A0A /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1D823E7A15E00240A0A /* Contribution.swift */; };
 		DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */; };
@@ -41,7 +40,6 @@
 		DE042D9A23EB02E500E3C37B /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
 		DE342E1023BB416C0002E90E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		DE342E1223BB449F0002E90E /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
-		DE3C014523EBA73A0060B7B5 /* ContributionGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionGraphViewModel.swift; sourceTree = "<group>"; };
 		DE535F9223E431250009C756 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		DE71E1D823E7A15E00240A0A /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
 		DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionGraphView.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				DE813D7B23B914AD00A3E72A /* TabItemView.swift */,
 				DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */,
 				DE71E1E223E7A67D00240A0A /* ContributionCellView.swift */,
-				DE3C014523EBA73A0060B7B5 /* ContributionGraphViewModel.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -353,7 +350,6 @@
 			files = (
 				DE813D8223B9156F00A3E72A /* TrendingScene.swift in Sources */,
 				DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */,
-				DE3C014623EBA73A0060B7B5 /* ContributionGraphViewModel.swift in Sources */,
 				DE342E1123BB416C0002E90E /* Language.swift in Sources */,
 				DED9A23923B90844000279BB /* AppDelegate.swift in Sources */,
 				DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */,
