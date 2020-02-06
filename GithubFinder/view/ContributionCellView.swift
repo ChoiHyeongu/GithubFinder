@@ -14,16 +14,16 @@ struct ContributionCellView: View {
   init(_ count: Int) {
     print("count: \(count)")
     switch count {
-    case 1 ... 24:
-      level = .level2
-    case 25 ... 49:
-      level = .level3
-    case 50 ... 74:
-      level = .level4
-    case 75 ... 10000:
-      level = .level5
-    default:
+    case 0:
       level = .level1
+    case 1 ... 3:
+      level = .level2
+    case 4 ... 6:
+      level = .level3
+    case 7 ... 9:
+      level = .level4
+    default:
+      level = .level5
     }
   }
 

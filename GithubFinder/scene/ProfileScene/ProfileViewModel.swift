@@ -38,7 +38,7 @@ class ProfileViewModel: ObservableObject {
     GithubAPI.shared.getContributions("choihyeongu") { result in
       switch result {
       case let .success(data):
-        let list = Array(data.contributions[320...459].reversed())
+        let list = Array(data.contributions[AppConfig.GRAPH_RANGE].reversed())
         for (index, item) in list.enumerated() {
           self.contributions[index / 7].append(item)
         }
