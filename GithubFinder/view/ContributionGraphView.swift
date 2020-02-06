@@ -12,18 +12,23 @@ struct ContributionGraphView: View {
   @Binding var contributions: [[Contribution]]
 
   var body: some View {
-    HStack(spacing: AppConfig.DEFAULT_GRAPH_SPACE) {
-      ForEach(0 ..< contributions.count, id:\.self) { col in
-        VStack(spacing: AppConfig.DEFAULT_GRAPH_SPACE) {
-          ForEach(0 ..< self.contributions[col].count, id:\.self) { row in ContributionCellView(self.contributions[col][row].count)
+    VStack(alignment: .leading, spacing: 3) {
+      Text("324 contributions in the last year")
+        .font(.footnote)
+      HStack(spacing: AppConfig.DEFAULT_GRAPH_SPACE) {
+        ForEach(0 ..< contributions.count, id: \.self) { col in
+          VStack(spacing: AppConfig.DEFAULT_GRAPH_SPACE) {
+            ForEach(0 ..< self.contributions[col].count, id: \.self) { row in ContributionCellView(self.contributions[col][row].count)
+            }
           }
         }
       }
+      .padding(15)
+      .overlay(RoundedRectangle(cornerRadius: 6)
+        .stroke(AppConfig.BORDER_COLOR, lineWidth: 1.5)
+      )
     }
-    .padding(15)
-    .overlay(RoundedRectangle(cornerRadius: 6)
-      .stroke(AppConfig.BORDER_COLOR, lineWidth: 1.5)
-    )
+    .padding(.top, 20)
   }
 }
 
