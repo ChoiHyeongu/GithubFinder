@@ -9,7 +9,22 @@
 import SwiftUI
 
 struct ContributionCellView: View {
-  var level: Level
+  var level: Level = Level.level1
+
+  init(_ count: Int) {
+    switch count {
+    case 0:
+      level = .level1
+    case 1 ... 24:
+      level = .level2
+    case 25 ... 49:
+      level = .level3
+    case 50 ... 74:
+      level = .level4
+    default:
+      level = .level5
+    }
+  }
 
   var body: some View {
     Color(level.rawValue)
@@ -19,6 +34,6 @@ struct ContributionCellView: View {
 
 struct ContributionCellView_Previews: PreviewProvider {
   static var previews: some View {
-    ContributionCellView(level: Level.level1)
+    ContributionCellView(0)
   }
 }
