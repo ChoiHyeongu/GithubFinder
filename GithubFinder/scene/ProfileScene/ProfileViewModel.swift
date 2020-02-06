@@ -13,8 +13,8 @@ class ProfileViewModel: ObservableObject {
   @Published var contributions = [[Contribution]](repeating: Array(repeating: Contribution(), count: 0), count: 20)
 
   init(login: String) {
-    setUser(login: login)
     setContributionGraph(username: "choihyeongu")
+    setUser(login: login)
   }
 
   /// 유저 정보 저장하기
@@ -27,7 +27,7 @@ class ProfileViewModel: ObservableObject {
         self.user.bio = user.bio?.filter { !"\r\n".contains($0) }
         self.user.bio = self.user.bio?.replacingOccurrences(of: "  ", with: "")
       case let .failure(error):
-        print(error)
+        print("[GithubAPI] setUser error \(error)")
       }
     }
   }
@@ -43,7 +43,7 @@ class ProfileViewModel: ObservableObject {
           self.contributions[index / 7].append(item)
         }
       case let .failure(error):
-        print(error)
+        print("[GithubAPI] setContributionGraph error \(error)")
       }
     }
   }

@@ -12,9 +12,16 @@ import Foundation
 class GithubAPI {
   static let shared: GithubAPI = GithubAPI()
 
-  private var request: DataRequest? {
-    didSet {
-      oldValue?.cancel()
+  private var request: DataRequest?
+
+  private var reachability: NetworkReachabilityManager!
+
+  private init() { monitorReachability() }
+
+  private func monitorReachability() {
+    reachability = NetworkReachabilityManager(host: "www.apple.com")
+    reachability.startListening { status in
+      print("Reachability Status Changed: \(status)")
     }
   }
 
@@ -32,7 +39,7 @@ class GithubAPI {
       }
     }
   }
-  
+
   /// 컨트리뷰션 정보 가져오기
   /// - Parameters:
   ///   - username: 유저이름

@@ -12,7 +12,6 @@ struct ContributionCellView: View {
   var level: Level = Level.level5
 
   init(_ count: Int) {
-    print("count: \(count)")
     switch count {
     case 0:
       level = .level1

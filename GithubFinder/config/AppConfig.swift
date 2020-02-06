@@ -11,7 +11,7 @@ import SwiftUI
 
 struct AppConfig {
   /// 기본 아바타
-  static let DEFAULT_AVATAR = "https://avatars2.githubusercontentO.com/u/41419137?s=400&v=4"
+  static let DEFAULT_AVATAR = "https://avatars2.githubusercontent.com/u/35494666?v=4"
   /// API 키
   static let API_KEY: String = "2fb22a8cd6848a08d7ecfada8963f13365853bca"
   /// 기본 URL
