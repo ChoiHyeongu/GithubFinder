@@ -22,7 +22,7 @@ struct ProfileScene: View {
       }
       .frame(width: 200.0, height: 200.0)
       .overlay(Circle().stroke(Color.white, lineWidth: 4))
-      //.shadow(radius: 5)
+      .shadow(radius: 5)
       .padding(.top, 15)
 
       Text(profileViewModel.user.login)

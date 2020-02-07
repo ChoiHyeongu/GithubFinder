@@ -9,17 +9,10 @@
 import Foundation
 
 enum Language: String {
+  case all = "All"
   case java = "Java"
   case kotlin = "Kotlin"
   case python = "Python"
-  case c = "C"
-  case cplusplus = "C++"
-  case csharp = "C#"
   case javascript = "JavaScript"
-  case html = "HTML"
-  case css = "CSS"
-  case php = "PHP"
-  case go = "Go"
-  case shell = "shell"
-  case typeScript = "TypeScript"
+  case swift = "Swift"
 }
