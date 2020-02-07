@@ -13,6 +13,7 @@
 		DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE042D9A23EB02E500E3C37B /* Contributions.swift */; };
 		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
 		DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* GithubAPI.swift */; };
+		DE3C014B23EBE0830060B7B5 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = DE3C014A23EBE0830060B7B5 /* SlideOverCard */; };
 		DE535F9323E431250009C756 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE535F9223E431250009C756 /* AppConfig.swift */; };
 		DE71E1D923E7A15E00240A0A /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1D823E7A15E00240A0A /* Contribution.swift */; };
 		DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */; };
@@ -63,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9C231023DFFD9700AC4970 /* URLImage in Frameworks */,
+				DE3C014B23EBE0830060B7B5 /* SlideOverCard in Frameworks */,
 				874FED39AE37985240B0A827 /* libPods-GithubFinder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +233,7 @@
 			name = GithubFinder;
 			packageProductDependencies = (
 				DE9C230F23DFFD9700AC4970 /* URLImage */,
+				DE3C014A23EBE0830060B7B5 /* SlideOverCard */,
 			);
 			productName = GithubFinder;
 			productReference = DED9A23523B90844000279BB /* GithubFinder.app */;
@@ -262,6 +265,7 @@
 			mainGroup = DED9A22C23B90844000279BB;
 			packageReferences = (
 				DE9C230E23DFFD9700AC4970 /* XCRemoteSwiftPackageReference "url-image" */,
+				DE3C014923EBE0830060B7B5 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */,
 			);
 			productRefGroup = DED9A23623B90844000279BB /* Products */;
 			projectDirPath = "";
@@ -528,6 +532,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE3C014923EBE0830060B7B5 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moifort/swiftUI-slide-over-card.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 		DE9C230E23DFFD9700AC4970 /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
@@ -539,6 +551,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE3C014A23EBE0830060B7B5 /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE3C014923EBE0830060B7B5 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */;
+			productName = SlideOverCard;
+		};
 		DE9C230F23DFFD9700AC4970 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE9C230E23DFFD9700AC4970 /* XCRemoteSwiftPackageReference "url-image" */;
