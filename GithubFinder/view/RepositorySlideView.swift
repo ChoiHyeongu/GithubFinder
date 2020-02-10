@@ -12,6 +12,7 @@ import SwiftUI
 struct RepositorySlideView: View {
   @State var status: CardPosition = .bottom
   @State var searchText: String = ""
+  @Binding var repos: [Repo]
 
   var body: some View {
     SlideOverCard($status) {
@@ -22,6 +23,9 @@ struct RepositorySlideView: View {
         HStack {
           DropDown()
             .frame(width: 395, alignment: .leading)
+        }
+        List(self.repos, id: \.self) { repo in
+          Text(repo.name)
         }
       }
     }
@@ -41,7 +45,8 @@ struct RepositorySlideView: View {
 }
 
 struct RepositorySlideView_Previews: PreviewProvider {
+  @State static var repos: [Repo] = [Repo(name: "0", full_name: "0", description: "0", language: "0", stargazers_count: 0)]
   static var previews: some View {
-    RepositorySlideView(status: .top)
+    RepositorySlideView(status: .top, repos: $repos)
   }
 }

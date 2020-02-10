@@ -8,8 +8,10 @@
 
 import Foundation
 
-struct Repo: Codable {
-  var title: String
-  var description: String
+struct Repo: Codable, Hashable {
+  var name: String
+  var full_name: String
+  var description: String?
   var language: String
+  var stargazers_count: Int
 }

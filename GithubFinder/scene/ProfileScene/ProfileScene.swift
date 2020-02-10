@@ -33,10 +33,13 @@ struct ProfileScene: View {
   }
 
   var body: some View {
-    VStack {
-      UsernameAndAvatarView
-      ContributionGraphView(contributions: $profileViewModel.contributions)
-      Spacer()
+    ZStack {
+      VStack {
+        UsernameAndAvatarView
+        ContributionGraphView(contributions: $profileViewModel.contributions)
+        Spacer()
+      }
+      RepositorySlideView(repos: $profileViewModel.repos)
     }
   }
 }

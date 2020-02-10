@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct DropDown: View {
+  let languages: [Language] = [.all, .swift, .java, .javascript, .kotlin, .python]
+  //let types: [Type] = [.all, .publicRepo, .privateRepo]
   @State var expand = false
-  @State var selectItem: Language = .all
-  var values: [Language] = [.swift, .java, .kotlin]
+  @State var selectItem: Language = Language.all
 
   var body: some View {
     VStack {
@@ -26,7 +27,7 @@ struct DropDown: View {
       .background(Color(.secondarySystemBackground))
       .cornerRadius(5)
       if expand {
-        ForEach(values, id: \.self) { index in
+        ForEach(languages, id: \.self) { index in
           HStack {
             if index == self.selectItem { Image(systemName: "checkmark") }
             Button(action: { self.selectItem = index }) {

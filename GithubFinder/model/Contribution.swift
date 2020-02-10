@@ -20,6 +20,6 @@ struct Contribution: Codable {
   var count: Int
   /// 날짜
   var date: String
-  /// 섹
+  /// 색
   var color: String
 }

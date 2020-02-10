@@ -55,4 +55,17 @@ class GithubAPI {
       }
     }
   }
+
+  func getUserRepos(_ username: String, _ completion: @escaping (Result<[Repo], Error>) -> Void) {
+    request = AF.request("\(AppConfig.BASE_URL)users/\(username)/repos")
+    request?.responseDecodable { (response: DataResponse<[Repo], AFError>) in
+      switch response.result {
+      case let .success(repos):
+        completion(.success(repos))
+      case let .failure(error):
+        print("[GithubAPI] gerUserRepos error \(error)")
+        print("URL : \(self.request)")
+      }
+    }
+  }
 }
