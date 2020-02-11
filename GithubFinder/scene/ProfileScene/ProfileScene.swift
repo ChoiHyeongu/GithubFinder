@@ -40,6 +40,7 @@ struct ProfileScene: View {
         Spacer()
       }
       RepositorySlideView(repos: $profileViewModel.repos)
+        .offset(y: -20)
     }
   }
 }

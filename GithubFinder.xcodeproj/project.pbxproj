@@ -18,9 +18,11 @@
 		DE71E1D923E7A15E00240A0A /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1D823E7A15E00240A0A /* Contribution.swift */; };
 		DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */; };
 		DE71E1E323E7A67D00240A0A /* ContributionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71E1E223E7A67D00240A0A /* ContributionCellView.swift */; };
+		DE74C71023F2416F00981065 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE74C70F23F2416F00981065 /* UIScreen.swift */; };
 		DE7641DC23F11A1C00DDF079 /* RepositoryOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641DB23F11A1C00DDF079 /* RepositoryOption.swift */; };
 		DE7641DE23F11A7F00DDF079 /* DropDownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641DD23F11A7F00DDF079 /* DropDownViewModel.swift */; };
 		DE7641E023F11EEA00DDF079 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641DF23F11EEA00DDF079 /* Option.swift */; };
+		DE7641E623F2233100DDF079 /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641E523F2233100DDF079 /* RepositoryView.swift */; };
 		DE813D7E23B9155A00A3E72A /* ProfileScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7D23B9155A00A3E72A /* ProfileScene.swift */; };
 		DE8ABBA223E91585005FF50D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8ABBA123E91585005FF50D /* Level.swift */; };
 		DE8FAF6E23ECFA5D00F3F376 /* RepositorySlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAF6D23ECFA5D00F3F376 /* RepositorySlideView.swift */; };
@@ -47,9 +49,11 @@
 		DE71E1D823E7A15E00240A0A /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
 		DE71E1E023E7A51900240A0A /* ContributionGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionGraphView.swift; sourceTree = "<group>"; };
 		DE71E1E223E7A67D00240A0A /* ContributionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionCellView.swift; sourceTree = "<group>"; };
+		DE74C70F23F2416F00981065 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		DE7641DB23F11A1C00DDF079 /* RepositoryOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOption.swift; sourceTree = "<group>"; };
 		DE7641DD23F11A7F00DDF079 /* DropDownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewModel.swift; sourceTree = "<group>"; };
 		DE7641DF23F11EEA00DDF079 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		DE7641E523F2233100DDF079 /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
 		DE813D7D23B9155A00A3E72A /* ProfileScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene.swift; sourceTree = "<group>"; };
 		DE8ABBA123E91585005FF50D /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		DE8FAF6D23ECFA5D00F3F376 /* RepositorySlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySlideView.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				DE8FAF6D23ECFA5D00F3F376 /* RepositorySlideView.swift */,
 				DE8FAF6F23ED0A3400F3F376 /* DropDown.swift */,
 				DE7641DD23F11A7F00DDF079 /* DropDownViewModel.swift */,
+				DE7641E523F2233100DDF079 /* RepositoryView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		DE8ABBA023E91574005FF50D /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				DE74C70F23F2416F00981065 /* UIScreen.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7641E623F2233100DDF079 /* RepositoryView.swift in Sources */,
 				DE8FAF6E23ECFA5D00F3F376 /* RepositorySlideView.swift in Sources */,
 				DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */,
 				DE342E1123BB416C0002E90E /* Language.swift in Sources */,
@@ -349,6 +356,7 @@
 				DED9A23923B90844000279BB /* AppDelegate.swift in Sources */,
 				DE8FAF7023ED0A3400F3F376 /* DropDown.swift in Sources */,
 				DE7641DC23F11A1C00DDF079 /* RepositoryOption.swift in Sources */,
+				DE74C71023F2416F00981065 /* UIScreen.swift in Sources */,
 				DE71E1E123E7A51900240A0A /* ContributionGraphView.swift in Sources */,
 				DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */,
 				DE535F9323E431250009C756 /* AppConfig.swift in Sources */,

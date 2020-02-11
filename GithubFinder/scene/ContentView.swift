@@ -11,7 +11,18 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     ZStack {
+      GithubLinkButton
       ProfileScene(profileViewModel: ProfileViewModel(login: "Choihyeongu"))
+    }
+  }
+
+  var GithubLinkButton: some View {
+    Button(action: {}) {
+      Image("GitHub-Mark")
+        .resizable()
+        .frame(width: 30, height: 30)
+        .foregroundColor(AppConfig.GITHUB_BACKGROUND)
+        .position(x: UIScreen.SCREEN_WIDTH / 15, y:15)
     }
   }
 }

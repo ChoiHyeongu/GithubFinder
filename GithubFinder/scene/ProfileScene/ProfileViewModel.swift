@@ -54,7 +54,11 @@ class ProfileViewModel: ObservableObject {
     GithubAPI.shared.getUserRepos("choihyeongu") { result in
       switch result {
       case let .success(repos):
-        self.repos = Array(repos.prefix(upTo: 7))
+        self.repos = Array(repos
+          .filter { AppConfig.LANGUAGE_STRING.contains($0.language) }
+          .prefix(upTo: 6)
+        )
+
       case let .failure(error):
         print("[GithubAPI] setContributionGraph error \(error)")
       }

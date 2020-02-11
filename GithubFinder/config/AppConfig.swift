@@ -27,4 +27,8 @@ struct AppConfig {
   static let DEFAULT_GRAPH_SPACE = CGFloat(integerLiteral: 3)
   /// 컨트리뷰션베열에서 나타낼  범위
   static let GRAPH_RANGE = Range(330...469)
+  /// 표시할 언어 목록
+  static let LANGUAGE: [Language] = [.all, .swift, .java, .javascript, .kotlin, .python]
+  /// 표시할 언어 목록 문자열
+  static let LANGUAGE_STRING: [String] = [Language.all.rawValue, Language.swift.rawValue, Language.java.rawValue, Language.javascript.rawValue, Language.kotlin.rawValue, Language.python.rawValue]
 }

@@ -30,7 +30,10 @@ struct DropDown: View {
         ForEach(languages, id: \.self) { index in
           HStack {
             if index == self.selectItem { Image(systemName: "checkmark") }
-            Button(action: { self.selectItem = index }) {
+            Button(action: {
+              self.selectItem = index
+              self.expand = false
+            }) {
               Text(index.rawValue)
             }
             .frame(width: 80, alignment: .leading)

@@ -24,8 +24,8 @@ struct RepositorySlideView: View {
           DropDown()
             .frame(width: 395, alignment: .leading)
         }
-        List(self.repos, id: \.self) { repo in
-          Text(repo.name)
+        ForEach(self.repos, id: \.self) { repo in
+          RepositoryView(repo: repo)
         }
       }
     }
@@ -45,7 +45,7 @@ struct RepositorySlideView: View {
 }
 
 struct RepositorySlideView_Previews: PreviewProvider {
-  @State static var repos: [Repo] = [Repo(name: "0", full_name: "0", description: "0", language: "0", stargazers_count: 0)]
+  @State static var repos: [Repo] = [Repo(name: "Psycho", full_name: "0", description: "어쩔줄읆 몰라 너를 달래고 매섭게 발로차도 내개 미소짓는 너 어떻게 놓겠어 우리는 아름답고 또 슬픈 사이야 서로를 빛나개해", language: "RedVelvet", stargazers_count: 0)]
   static var previews: some View {
     RepositorySlideView(status: .top, repos: $repos)
   }
