@@ -24,7 +24,7 @@ struct RepositorySlideView: View {
           DropDown()
             .frame(width: 395, alignment: .leading)
         }
-        ForEach(self.repos, id: \.self) { repo in
+        ForEach(self.filterRepoList(self.repos), id: \.self) { repo in
           RepositoryView(repo: repo)
         }
       }
@@ -41,6 +41,14 @@ struct RepositorySlideView: View {
         .padding(.horizontal, 10)
     }
     .padding(EdgeInsets(top: 8, leading: 6, bottom: 8, trailing: 6))
+  }
+
+  func filterRepoList(_ repo: [Repo]) -> [Repo] {
+    if !searchText.isEmpty {
+      return repo.filter { $0.name.contains(self.searchText) }
+    } else {
+      return repo
+    }
   }
 }
 
