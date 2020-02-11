@@ -17,12 +17,18 @@ struct ContentView: View {
   }
 
   var GithubLinkButton: some View {
-    Button(action: {}) {
+    Button(action: { self.openGithub() }) {
       Image("GitHub-Mark")
         .resizable()
         .frame(width: 30, height: 30)
         .foregroundColor(AppConfig.GITHUB_BACKGROUND)
-        .position(x: UIScreen.SCREEN_WIDTH / 15, y:15)
+        .position(x: UIScreen.SCREEN_WIDTH / 15, y: 15)
+    }
+  }
+
+  func openGithub() {
+    if let url = AppConfig.GITHUB_PROFILE {
+      UIApplication.shared.open(url)
     }
   }
 }

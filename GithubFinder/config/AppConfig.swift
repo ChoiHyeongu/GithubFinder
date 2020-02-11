@@ -31,4 +31,7 @@ struct AppConfig {
   static let LANGUAGE: [Language] = [.all, .swift, .java, .javascript, .kotlin, .python]
   /// 표시할 언어 목록 문자열
   static let LANGUAGE_STRING: [String] = [Language.all.rawValue, Language.swift.rawValue, Language.java.rawValue, Language.javascript.rawValue, Language.kotlin.rawValue, Language.python.rawValue]
+  
+  /// 깃허브 프로필 주소
+  static let GITHUB_PROFILE = URL(string: "https://github.com/ChoiHyeongu")
 }
