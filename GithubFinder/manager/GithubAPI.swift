@@ -64,7 +64,6 @@ class GithubAPI {
         completion(.success(repos))
       case let .failure(error):
         print("[GithubAPI] gerUserRepos error \(error)")
-        print("URL : \(self.request)")
       }
     }
   }

@@ -11,6 +11,7 @@
 		DE000CB723BB3A7E000C082C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB623BB3A7E000C082C /* User.swift */; };
 		DE000CB923BB3ABD000C082C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB823BB3ABD000C082C /* Repo.swift */; };
 		DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE042D9A23EB02E500E3C37B /* Contributions.swift */; };
+		DE0E68312402C71D00F66A81 /* SettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E68302402C71D00F66A81 /* SettingScene.swift */; };
 		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
 		DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* GithubAPI.swift */; };
 		DE3C014B23EBE0830060B7B5 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = DE3C014A23EBE0830060B7B5 /* SlideOverCard */; };
@@ -43,6 +44,7 @@
 		DE000CB623BB3A7E000C082C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE000CB823BB3ABD000C082C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		DE042D9A23EB02E500E3C37B /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
+		DE0E68302402C71D00F66A81 /* SettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScene.swift; sourceTree = "<group>"; };
 		DE342E1023BB416C0002E90E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		DE342E1223BB449F0002E90E /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		DE535F9223E431250009C756 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		DE0E682F2402C70900F66A81 /* SettingScene */ = {
+			isa = PBXGroup;
+			children = (
+				DE0E68302402C71D00F66A81 /* SettingScene.swift */,
+			);
+			path = SettingScene;
+			sourceTree = "<group>";
+		};
 		DE342E0F23BB415D0002E90E /* enum */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 		DE813D7923B9148400A3E72A /* scene */ = {
 			isa = PBXGroup;
 			children = (
+				DE0E682F2402C70900F66A81 /* SettingScene */,
 				DE71E1DC23E7A36C00240A0A /* ProfileScene */,
 				DED9A23C23B90844000279BB /* ContentView.swift */,
 			);
@@ -365,6 +376,7 @@
 				DE813D7E23B9155A00A3E72A /* ProfileScene.swift in Sources */,
 				DE000CB723BB3A7E000C082C /* User.swift in Sources */,
 				DED9A23B23B90844000279BB /* SceneDelegate.swift in Sources */,
+				DE0E68312402C71D00F66A81 /* SettingScene.swift in Sources */,
 				DE9C230923DFEA2700AC4970 /* ProfileViewModel.swift in Sources */,
 				DE7641E023F11EEA00DDF079 /* Option.swift in Sources */,
 				DE71E1D923E7A15E00240A0A /* Contribution.swift in Sources */,
