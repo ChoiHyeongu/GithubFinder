@@ -12,7 +12,6 @@
 		DE000CB923BB3ABD000C082C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE000CB823BB3ABD000C082C /* Repo.swift */; };
 		DE042D9B23EB02E500E3C37B /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE042D9A23EB02E500E3C37B /* Contributions.swift */; };
 		DE0E68312402C71D00F66A81 /* SettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E68302402C71D00F66A81 /* SettingScene.swift */; };
-		DE342E1123BB416C0002E90E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1023BB416C0002E90E /* Language.swift */; };
 		DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342E1223BB449F0002E90E /* GithubAPI.swift */; };
 		DE3C014B23EBE0830060B7B5 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = DE3C014A23EBE0830060B7B5 /* SlideOverCard */; };
 		DE535F9323E431250009C756 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE535F9223E431250009C756 /* AppConfig.swift */; };
@@ -22,13 +21,14 @@
 		DE74C71023F2416F00981065 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE74C70F23F2416F00981065 /* UIScreen.swift */; };
 		DE7641DC23F11A1C00DDF079 /* RepositoryOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641DB23F11A1C00DDF079 /* RepositoryOption.swift */; };
 		DE7641DE23F11A7F00DDF079 /* DropDownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641DD23F11A7F00DDF079 /* DropDownViewModel.swift */; };
-		DE7641E023F11EEA00DDF079 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641DF23F11EEA00DDF079 /* Option.swift */; };
 		DE7641E623F2233100DDF079 /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7641E523F2233100DDF079 /* RepositoryView.swift */; };
 		DE813D7E23B9155A00A3E72A /* ProfileScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE813D7D23B9155A00A3E72A /* ProfileScene.swift */; };
-		DE8ABBA223E91585005FF50D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8ABBA123E91585005FF50D /* Level.swift */; };
+		DE841CD7243201FB00537672 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE841CD6243201FB00537672 /* Enum.swift */; };
+		DE841CD92432031F00537672 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE841CD82432031F00537672 /* API.swift */; };
+		DE841CDD2432071300537672 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE841CDC2432071300537672 /* RequestType.swift */; };
+		DE841CDF24321C5200537672 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE841CDE24321C5200537672 /* ResponseType.swift */; };
 		DE8FAF6E23ECFA5D00F3F376 /* RepositorySlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAF6D23ECFA5D00F3F376 /* RepositorySlideView.swift */; };
 		DE8FAF7023ED0A3400F3F376 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAF6F23ED0A3400F3F376 /* DropDown.swift */; };
-		DE8FAF7223ED274800F3F376 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAF7123ED274800F3F376 /* Type.swift */; };
 		DE9C230923DFEA2700AC4970 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9C230823DFEA2700AC4970 /* ProfileViewModel.swift */; };
 		DE9C231023DFFD9700AC4970 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE9C230F23DFFD9700AC4970 /* URLImage */; };
 		DED9A23923B90844000279BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9A23823B90844000279BB /* AppDelegate.swift */; };
@@ -45,7 +45,6 @@
 		DE000CB823BB3ABD000C082C /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		DE042D9A23EB02E500E3C37B /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
 		DE0E68302402C71D00F66A81 /* SettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScene.swift; sourceTree = "<group>"; };
-		DE342E1023BB416C0002E90E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		DE342E1223BB449F0002E90E /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		DE535F9223E431250009C756 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		DE71E1D823E7A15E00240A0A /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
@@ -54,13 +53,14 @@
 		DE74C70F23F2416F00981065 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		DE7641DB23F11A1C00DDF079 /* RepositoryOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOption.swift; sourceTree = "<group>"; };
 		DE7641DD23F11A7F00DDF079 /* DropDownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewModel.swift; sourceTree = "<group>"; };
-		DE7641DF23F11EEA00DDF079 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		DE7641E523F2233100DDF079 /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
 		DE813D7D23B9155A00A3E72A /* ProfileScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene.swift; sourceTree = "<group>"; };
-		DE8ABBA123E91585005FF50D /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		DE841CD6243201FB00537672 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		DE841CD82432031F00537672 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DE841CDC2432071300537672 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		DE841CDE24321C5200537672 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		DE8FAF6D23ECFA5D00F3F376 /* RepositorySlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySlideView.swift; sourceTree = "<group>"; };
 		DE8FAF6F23ED0A3400F3F376 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
-		DE8FAF7123ED274800F3F376 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		DE9C230823DFEA2700AC4970 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		DED9A23523B90844000279BB /* GithubFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED9A23823B90844000279BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 				DE000CB823BB3ABD000C082C /* Repo.swift */,
 				DE71E1D823E7A15E00240A0A /* Contribution.swift */,
 				DE042D9A23EB02E500E3C37B /* Contributions.swift */,
+				DE841CDC2432071300537672 /* RequestType.swift */,
+				DE841CDE24321C5200537672 /* ResponseType.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -119,10 +121,7 @@
 		DE342E0F23BB415D0002E90E /* enum */ = {
 			isa = PBXGroup;
 			children = (
-				DE8ABBA123E91585005FF50D /* Level.swift */,
-				DE342E1023BB416C0002E90E /* Language.swift */,
-				DE8FAF7123ED274800F3F376 /* Type.swift */,
-				DE7641DF23F11EEA00DDF079 /* Option.swift */,
+				DE841CD6243201FB00537672 /* Enum.swift */,
 			);
 			path = enum;
 			sourceTree = "<group>";
@@ -196,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				DE342E1223BB449F0002E90E /* GithubAPI.swift */,
+				DE841CD82432031F00537672 /* API.swift */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -359,10 +359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE841CD92432031F00537672 /* API.swift in Sources */,
 				DE7641E623F2233100DDF079 /* RepositoryView.swift in Sources */,
 				DE8FAF6E23ECFA5D00F3F376 /* RepositorySlideView.swift in Sources */,
 				DE342E1323BB449F0002E90E /* GithubAPI.swift in Sources */,
-				DE342E1123BB416C0002E90E /* Language.swift in Sources */,
 				DE7641DE23F11A7F00DDF079 /* DropDownViewModel.swift in Sources */,
 				DED9A23923B90844000279BB /* AppDelegate.swift in Sources */,
 				DE8FAF7023ED0A3400F3F376 /* DropDown.swift in Sources */,
@@ -373,16 +373,16 @@
 				DE535F9323E431250009C756 /* AppConfig.swift in Sources */,
 				DE71E1E323E7A67D00240A0A /* ContributionCellView.swift in Sources */,
 				DE000CB923BB3ABD000C082C /* Repo.swift in Sources */,
+				DE841CDF24321C5200537672 /* ResponseType.swift in Sources */,
 				DE813D7E23B9155A00A3E72A /* ProfileScene.swift in Sources */,
 				DE000CB723BB3A7E000C082C /* User.swift in Sources */,
 				DED9A23B23B90844000279BB /* SceneDelegate.swift in Sources */,
+				DE841CDD2432071300537672 /* RequestType.swift in Sources */,
 				DE0E68312402C71D00F66A81 /* SettingScene.swift in Sources */,
+				DE841CD7243201FB00537672 /* Enum.swift in Sources */,
 				DE9C230923DFEA2700AC4970 /* ProfileViewModel.swift in Sources */,
-				DE7641E023F11EEA00DDF079 /* Option.swift in Sources */,
 				DE71E1D923E7A15E00240A0A /* Contribution.swift in Sources */,
 				DED9A23D23B90844000279BB /* ContentView.swift in Sources */,
-				DE8ABBA223E91585005FF50D /* Level.swift in Sources */,
-				DE8FAF7223ED274800F3F376 /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

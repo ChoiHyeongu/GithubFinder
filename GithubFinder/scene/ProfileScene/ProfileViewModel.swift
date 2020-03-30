@@ -22,16 +22,17 @@ class ProfileViewModel: ObservableObject {
   /// 유저 정보 저장하기
   /// - Parameter login: 유저 로그인 아이디
   func setUser(login: String) {
-    GithubAPI.shared.getUser(login) { result in
-      switch result {
-      case let .success(user):
-        self.user = user
-        self.user.bio = user.bio?.filter { !"\r\n".contains($0) }
-        self.user.bio = self.user.bio?.replacingOccurrences(of: "  ", with: "")
-      case let .failure(error):
-        print("[GithubAPI] setUser error \(error)")
-      }
-    }
+//    GithubAPI.shared.getUser(login) { result in
+//      switch result {
+//      case let .success(user):
+//        self.user = user
+//        self.user.bio = user.bio?.filter { !"\r\n".contains($0) }
+//        self.user.bio = self.user.bio?.replacingOccurrences(of: "  ", with: "")
+//      case let .failure(error):
+//        print("[GithubAPI] setUser error \(error)")
+//      }
+//    }
+    
   }
 
   /// 컨트리뷰션 정보 저장하기

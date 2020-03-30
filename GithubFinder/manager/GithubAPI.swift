@@ -11,6 +11,7 @@ import Foundation
 
 class GithubAPI {
   static let shared: GithubAPI = GithubAPI()
+  static let api = API()
 
   private var request: DataRequest?
 
@@ -29,15 +30,16 @@ class GithubAPI {
   /// - Parameter login: 아이디
   /// - Parameter completion: 컴플리션
   func getUser(_ login: String, _ completion: @escaping (Result<User, Error>) -> Void) {
-    request = AF.request("\(AppConfig.BASE_URL)users/\(login)", headers: ["Authorization": AppConfig.API_KEY])
-    request?.responseDecodable { (response: DataResponse<User, AFError>) in
-      switch response.result {
-      case let .success(user):
-        completion(.success(user))
-      case let .failure(error):
-        print("[GithubAPI] getUser error \(error)")
-      }
-    }
+//    request = AF.request("\(AppConfig.BASE_URL)users/\(login)", headers: ["Authorization": AppConfig.API_KEY])
+//    request?.responseDecodable { (response: DataResponse<User, AFError>) in
+//      switch response.result {
+//      case let .success(user):
+//        completion(.success(user))
+//      case let .failure(error):
+//        print("[GithubAPI] getUser error \(error)")
+//      }
+//    }
+    api.request(request: RequestType<User, Error>)
   }
 
   /// 컨트리뷰션 정보 가져오기
