@@ -11,12 +11,16 @@ import Combine
 import Foundation
 
 class API {
-  func request<T: RequestType>(request: T) -> AnyPublisher<T.ResponseType, Error> {
-    return AF.request(AppConfig.BASE_URL.appending(request.path))
+  var baseURL: String?
+
+  func request<T: RequestType>(request: T) {
+    guard let url = URL(string: baseURL!.appending(request.path)) else { return }
+    AF.request(url, method: request.method,
+               parameters: request.parameters,
+               encoding: request.parameterEncoding,
+               headers: request.headers)
       .responseJSON { response in
-        print(response)
-      }
-    .data!
-      .publisher
+      print(response)
+    }
   }
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2020 Choi. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 protocol RequestType {
   associatedtype ResponseType: Codable
@@ -16,13 +16,5 @@ protocol RequestType {
   var path: String { get }
   var parameters: [String: Any] { get }
   var parameterEncoding: ParameterEncoding { get }
-  var headers: [String: String]? { get }
-}
-
-extension RequestType {
-  var headers: [String: String]? {
-    return [
-      "Content-Type": "application/json",
-    ]
-  }
+  var headers: HTTPHeaders? { get }
 }
