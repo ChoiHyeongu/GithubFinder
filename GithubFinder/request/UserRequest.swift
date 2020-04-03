@@ -6,23 +6,26 @@
 //  Copyright © 2020 Choi. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 class UserRequset: RequestType {
   typealias ResponseType = User
 
   let method: HTTPMethod = .get
-  var path: String = "/user"
+  let path: String
   let parameters: [String: Any]
   let parameterEncoding: ParameterEncoding = URLEncoding.default
-  let headers: HTTPHeaders?
-
-  private init(login: String) {
-    path.append("\\\(login)")
-    headers = [
+  var headers: HTTPHeaders? {
+    return [
       "Authorization": AppConfig.API_KEY,
     ]
+  }
+
+  private init(login: String) {
+    path = "\(AppConfig.BASE_URL)users/\(login)"
+    print("PATH: \(path)")
+    parameters = [:]
   }
 }
 

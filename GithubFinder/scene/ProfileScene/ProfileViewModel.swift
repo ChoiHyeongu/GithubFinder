@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Combine
 
 class ProfileViewModel: ObservableObject {
   @Published var user: User = User(login: "")
@@ -22,9 +23,7 @@ class ProfileViewModel: ObservableObject {
   /// 유저 정보 저장하기
   /// - Parameter login: 유저 로그인 아이디
   func setUser(login: String) {
-    GithubAPI.shared.getUser(login) { response in
-      print("setUser : \(response)")
-    }
+    GithubAPI.shared.getUser(login)
   }
 
   /// 컨트리뷰션 정보 저장하기

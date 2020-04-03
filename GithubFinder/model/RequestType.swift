@@ -18,3 +18,11 @@ protocol RequestType {
   var parameterEncoding: ParameterEncoding { get }
   var headers: HTTPHeaders? { get }
 }
+
+extension RequestType {
+  var headers: HTTPHeaders? {
+    return [
+      "Content-Type": "application/json",
+    ]
+  }
+}

@@ -13,14 +13,21 @@ import Foundation
 class API {
   var baseURL: String?
 
-  func request<T: RequestType>(request: T) {
+  func request<T: RequestType>(request: T) -> AnyPublisher<User, Error>{
     guard let url = URL(string: baseURL!.appending(request.path)) else { return }
-    AF.request(url, method: request.method,
-               parameters: request.parameters,
-               encoding: request.parameterEncoding,
-               headers: request.headers)
-      .responseJSON { response in
-      print(response)
+    return AnyPublisher { subscriber in
+      AF.request(url, method: request.method,
+                                     parameters: request.parameters,
+                                     encoding: request.parameterEncoding,
+                                     headers: request.headers)
+        .response { response in
+          switch response.result {
+          case let .success(user):
+            _ = subscriber.receive
+          case let .failure(error):
+            print("Error \(error))")
+          }
+        }
     }
   }
 }
